@@ -30,6 +30,216 @@ html{
 	width: 100%;
 }
 
+
+/*=========================header design starts============================*/
+
+header{
+	background-color: white;
+	padding: 0% 1%;
+	text-align: center;
+}
+
+.logo{
+	height: 120px;
+	width: 130px;
+	text-align: center;
+}
+
+nav ul li{
+	display: block;
+}
+
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	line-height: 60px;
+	padding: 0 20px;
+	font-size: 1rem;
+}
+
+nav ul li a:hover{
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+
+}
+
+
+/*=========================header design ends===============================*/
+
+
+/*=========================banner starts===============================*/
+
+#banner-section{
+	background-image: url(images/bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-contents{
+	padding: 50px 10px;
+	text-align: center;
+
+}
+
+.banner-contents h1{
+	width: 100%;
+	margin: 15px auto;
+	padding: 15px 5px;
+	font-size: 2.5rem;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+.banner-contents p{
+	width: 100%;
+	margin: 15px auto;
+	padding: 10px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+.btn{
+	width: 160px;
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 5px;
+	border:none;
+	background-color: gold;
+	transition: .4s;
+}
+
+.btn:hover{
+	transform: scale(1.2);
+}
+
+
+
+/*=========================banner ends===============================*/
+
+
+/*=========================about-us starts===============================*/
+
+#about-us{
+	padding: 1%;
+}
+
+.about-us-contents{
+	text-align: center;
+}
+
+.about-us-contents h3{
+	font-size: 2rem;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+
+.about-us-contents p{
+	font-size: .8rem;
+	margin-bottom: 10px;
+}
+
+/*=========================about-us ends===============================*/
+
+
+/*=========================food menu starts===============================*/
+
+#menu-section{
+	padding: 1%;
+}
+
+.card{
+	text-align: center;
+	transition: .4s;
+
+}
+.card:hover{
+	transform: scale(1.1);
+}
+
+.card-body img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+
+}
+
+.item-text{
+	background-color: #F5F5F5;
+}
+
+.item-heading{
+	background-color: gold;
+	padding: 10px;
+}
+
+.item-text > p{
+	font-size: 1rem;
+	padding: 10px;
+	font-weight: bold;
+}
+/*=========================food menu ends===============================*/
+
+
+
+/*=========================contact starts===============================*/
+
+#contact{
+	padding: 1%;
+	background-color: #BDDBE5;
+}
+
+.contact-details{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.map{
+	width: 100%;
+	height: 250px;
+}
+
+/*=========================contact ends===============================*/
+
+
+/*=========================footer starts===============================*/
+footer{
+	color: white;
+	background-color: #131313;
+}
+footer p{
+	text-align: center;
+	line-height: 32px;
+}
+
+.social-menu{
+	text-align: center;
+}
+
+.icon-style{
+	color: white;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 0 10px;
+	transition: .4s;
+	text-align: center;
+
+}
+.icon-style:hover{
+	background-color: #BDDBE5;
+	transform: scale(1.2);
+	color: black;
+}
+/*=========================footer ends===============================*/
+
 /*small devices (portrait tablets and large phones, 576px and up)*/
 @media (min-width: 576px){
 	.col-sm-1{
@@ -114,6 +324,68 @@ html{
 
 /*large devices (portrait tablets and large phones, 992px and up)*/
 @media (min-width: 992px){
+
+
+	.logo-div{
+		text-align: left;
+	}
+
+
+	nav ul{
+		text-align: right;
+		padding-top: 30px;
+	}
+
+	nav ul li{
+		display: inline-block;
+	}
+
+	nav ul li a{
+		display: inline-block;
+	}
+
+	nav ul li a:hover{
+		background-color: transparent;
+		transform: scale(1.2);
+		color: black;
+		font-weight: bold;
+
+	}
+
+										/*banner strats*/
+	#banner-section{
+		position: relative;
+		height: 70vh;
+	}
+	.banner-contents{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.banner-contents h1{
+		width: 700px;
+		font-size: 3.5rem;
+	}
+
+	.banner-contents p{
+		width: 700px;
+		font-size: 2rem;
+	}
+
+										/*banner ends*/
+
+										/*footer strats*/
+	footer p{
+		text-align: left;
+	}
+
+	.social-menu{
+		text-align: right;
+	}
+
+										/*footer ends*/
 	.col-lg-1{
 		width:8.33%;
 	}
